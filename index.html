@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modal window with vanillaJS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/reset.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/modal.css">
 </head>
 <body>
-    <h1 class="title">
-        Vanilla JS Responsive ModalWindow
-    </h1>
-    <button class="js-button">
-        Click here
-    </button>
+    <div class="container">
+        <h1 class="title">
+            Vanilla JS Responsive ModalWindow
+        </h1>
+        <button class="js-button-open button">
+            Click here
+        </button>
+    </div>
+
+    <div class="modal-container js-modal">
+        <div class="modal-box">
+            <i class="js-close modal-close">
+                X
+            </i>
+            <h2 class="modal-title">Modal Window</h2>
+            <p class="modal-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolorem, praesentium architecto similique recusandae vitae corrupti repellat officia mollitia non iusto ea doloremque odit nobis atque adipisci pariatur! Vel, eligendi?</p>
+            <button class="js-button-yes modal-button">Yes</button>
+            <button class="js-button-no modal-button">No</button>
+        </div>
+    </div>
+    <script src="./asset/js/modal.js"></script>
 </body>
 </html>
