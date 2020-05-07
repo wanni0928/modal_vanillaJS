@@ -1,0 +1,8 @@
+body { position: absolute; left: 0; top: 0; bottom: 0; right: 0; background-color: #fffddd; font-family: 'Poppins', sans-serif; height: 969px;
+}
+.container {position: absolute; left: 0; top: 120px; width: 1200px; bottom:120px; right: 0; text-align: center; margin: 0 auto; background-color: #fafafa; border-radius: 20px;box-shadow: 0 0 165px rgba(121, 121, 121, 0.3)
+}
+
+.title {font-size: 48px; padding: 150px 0 0; color: #222831; font-weight: 500;}
+.title:after {content: ""; display: block; width: 25px; height: 3px; background-color: #222831; margin: 35px auto;}
+.button {background-color: #ffa41b; width: 260px; line-height: 45px; border-radius: 22px; font-size: 24px;box-shadow: 0 0 65px rgba(121, 121, 121, 0.5); font-weight: 400;}
