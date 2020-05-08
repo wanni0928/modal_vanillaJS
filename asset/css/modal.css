@@ -1,4 +1,5 @@
-.modal-container {position: relative; background-color: rgba(0,0,0,0.4); width: 100%; height: 100%; z-index: 999; display: none;}
+.modal-container {position: relative; background-color: rgba(0,0,0,0.4); width: 100%; height: 100%; z-index: 999; visibility: hidden; opacity: 0;  transition: all 0.3s;}
+
 .modal-box {position: absolute; width: 750px; min-height: 360px; left: 0; right: 0; top: 50%; margin: -300px auto 0; background-color: #fff;border-radius: 20px;text-align: center; padding: 20px;}
 .modal-button {display: inline-block; width: 120px; line-height: 45px; border-radius: 22px;}
 .modal-title {font-weight: 500;font-size: 32px; margin: 40px 0;}
@@ -6,24 +7,25 @@
 .modal-button{margin: 0 4px;}
 .modal-close{font-style: normal; font-size: 24px; position: absolute; right: 20px; top: 10px; cursor: pointer;}
 
-.enable{display: block; animation: fadeIn .2s linear;}
-.disable{animation: fadeOut .5s linear; display: none;}
+.enable{display: block; visibility: visible; opacity: 1; transition: all 0.3s;}
+.disable{visibility: hidden; opacity: 0; transition: all 0.3s;}
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
     from {
         opacity: 0;
     }
     to {
         opacity: 1;
+        visibility: visible;
     }
 }
 
 @keyframes fadeOut {
-    from {
+    0% {
         opacity: 1;
     }
-    to {
+    100% {
         opacity: 0;
-        
+        visibility: hidden;
     }
-}
+} */
